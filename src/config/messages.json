@@ -1,0 +1,24 @@
+{
+    "response.json_ok":"Requisição efetuada com sucesso",
+    "response.json_bad":"Requisição não efetuada conforme esperado",
+    "response.json_unathorized":"Requisição não autorizda",
+    "response.json_not_found":"Requisição não encontrada",
+    "response.json_erro":"Erro interno no servidor",
+    
+    "account.signup.email_exists":"Email já cadastrado",
+    "account.signup.success":"Cadstro efetuado com sucesso",
+    "account.signup.password_confirmation.any.required": "Confirmação de senha obrigatório",
+    "account.signup.password_confirmation.any.only": "Senhas incompativeis",
+    "account.signup.email.string.empty":"Email obrigatório",
+    "account.signup.email.string.email":"Email invalido",
+    "account.signup.password.string.pattern.base":"Senha menor que 3 caracter",
+    "account.signup.password.string.empty":"Senha obrigatória",
+
+    "account.signin.invalid":"Credenciais Invalidas",
+    "account.signin.success":"Login Efetuado com sucesso",
+    "account.signin.email.string.empty":"Email obrigatório",
+    "account.signin.email.string.email":"Email invalido",
+    "account.signin.password.string.pattern.base":"Senha menor que 3 caracter",
+    "account.signin.password.string.empty":"Senha obrigatória"
+    
+}
