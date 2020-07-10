@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route, Link } from 'react-router-dom'
 
 import SignIn from './screens/Signin/index'
 import Home from './screens/Home/index'
-import SignUp from './screens/Signup/index'
+import SignUp from './screens/SignUp/index'
 import ManageLinks from './screens/Manage/Links/index'
 import ManageLinksCreate from './screens/Manage/Links/Create/index'
 import ManageLinksEdit from './screens/Manage/Links/Edit/index'
