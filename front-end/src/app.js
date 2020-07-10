@@ -1,36 +1,47 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom'
 
+import SignIn from './screens/Signin/index'
+import Home from './screens/Home/index'
+import SignUp from './screens/Signup/index'
+import ManageLinks from './screens/Manage/Links/index'
+import ManageLinksCreate from './screens/Manage/Links/Create/index'
+import ManageLinksEdit from './screens/Manage/Links/Edit/index'
 const App = () => {
     return (
         <BrowserRouter>
-            <div>
+            <div >
                 <nav>
-                    <ul>
-                        <li>
+                    <ul className = "list-group list-group-horizontal">
+                        <li className = "list-group-item">
                             <Link to='/sign-in'> Sign-in</Link>
                         </li>
-                        <li>
+                        <li className = "list-group-item">
                             <Link to='/sign-up'> Sign-up</Link>
                         </li>
-                        <li>
-                            <Link to='/manage/links/create'> Create Link</Link>
+                        <li className = "list-group-item">
+                            <Link to='/manage/links/create'> Create Link </Link>
                         </li>
-                        <li>
+                        <li className = "list-group-item">
                             <Link to='/manage/links/edit'> Edit Link</Link>
                         </li>
-                        <li>
+                        <li className = "list-group-item">
                             <Link to='/manage/links'> Links</Link>
                         </li>
                     </ul>
                 </nav>
                 <Switch>
-                    <Route path='/sign-in'><h1>Sign-in</h1></Route>
-                    <Route path='/sign-up'><h1>Sign-up</h1></Route>
-                    <Route path='/manage/links/create'><h1>Create Link</h1></Route>
-                    <Route path='/manage/links/edit'><h1>Edit Link</h1></Route>
-                    <Route path='/manage/links'><h1> Links</h1></Route>
-                    <Route path='/'><h1> Home</h1></Route>
+                    <Route path='/sign-in'> <SignIn/> </Route>
+
+                    <Route path='/sign-up'> <SignUp/> </Route>
+
+                    <Route path='/manage/links/create'> <ManageLinksCreate/> </Route>
+                    
+                    <Route path='/manage/links/edit'><ManageLinksEdit/></Route>
+                    
+                    <Route path='/manage/links'> <ManageLinks/> </Route>
+                    
+                    <Route path='/'> <Home /></Route>
                 </Switch>
             </div>
         </BrowserRouter>
